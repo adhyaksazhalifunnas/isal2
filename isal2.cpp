@@ -136,12 +136,12 @@ void pembayaran(int beli)
     cout << "||Harga Paket yang dipilih \t: Rp. " << beli; cout << "||" << endl;
     cout << "Pembayaran TUNAI \t\t: Rp. "; cin >> masuk;
 
-    if (masuk < beli)
+    while (masuk < beli)
     {
         cout << "LAH UANGNYA GA CUKUP BRO PINJEM TEMEN DULU BURUAN" << endl;
         cout << "Bayar ulang \t\t\t: Rp. "; cin >> masuk;
     } 
-    else if (masuk = beli) 
+    if (masuk == beli) 
     {
         cout << "DUITNYA PAS BRO, MANTAB" <<endl;
     }
